@@ -66,7 +66,7 @@ elseif(OS_MACOS)
   configure_file(cmake/bundle/macos/installer-macos.pkgproj.in ${CMAKE_BINARY_DIR}/installer-macos.generated.pkgproj)
   target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
 elseif(OS_POSIX)
-  target_link_libraries(${PROJECT_NAME} Qt::GuiPrivate)
+  target_link_libraries(${PROJECT_NAME} Qt::Gui)
 endif()
 
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC ON AUTOUIC ON AUTORCC ON)
