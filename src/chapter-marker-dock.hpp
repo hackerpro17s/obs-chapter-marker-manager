@@ -58,7 +58,7 @@ public:
 
 	void setAnnotationDock(AnnotationDock *dock);
 	void writeAnnotationToFiles(const QString &chapterName, const QString &timestamp, const QString &chapterSource);
-	void applyThemeIDToButton(QPushButton *button, const QString &themeID);
+	void applyParamsToConfigButton(QPushButton *button);
 	QDialog *settingsDialog;
 	void LoadSettings(obs_data_t *settings);
 	void SaveSettings();

@@ -204,7 +204,7 @@ void ChapterMarkerDock::setupMainDockSaveButtonLayout(QVBoxLayout *mainLayout)
 
 	// Configure the settings button
 	settingsButton->setToolTip(obs_module_text("SettingsTooltip"));
-	applyThemeIDToButton(settingsButton, "configIconSmall");
+	applyParamsToConfigButton(settingsButton);
 
 	// Configure the annotation button using the applyThemeIDToButton function
 	annotationButton->setIcon(QIcon(":/images/annotation-icon.svg"));
@@ -1249,9 +1249,10 @@ void ChapterMarkerDock::onAddAnnotation(const QString &annotationText, const QSt
 }
 
 //--------------------UTILITY FUNCTIONS--------------------
-void ChapterMarkerDock::applyThemeIDToButton(QPushButton *button, const QString &themeID)
+void ChapterMarkerDock::applyParamsToConfigButton(QPushButton *button)
 {
-	button->setProperty("themeID", themeID);
+	button->setIcon(QIcon(":/images/settings-icon.svg"));
+	//button->setProperty("themeID", themeID);
 	button->setMinimumSize(32, 24);
 	button->setMaximumSize(32, 24);
 	button->setIconSize(QSize(20, 20));
