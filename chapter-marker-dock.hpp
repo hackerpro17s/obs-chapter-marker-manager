@@ -48,6 +48,7 @@ public:
 	void writeChapterToEDLFile(const QString &chapterName, const QString &timestamp, const QString &chapterSource);
 	void setExportEDLFilePath(const QString &filePath);
 	QString convertTimestampToTimecode(const QString &timestamp, int frameNumber) const;
+	void addChapterMarkerByCustomHotkey(const QString &chapterName, const QString &chapterSource);
 	void addChapterMarker(const QString &chapterName, const QString &chapterSource);
 	bool exportChaptersToTextEnabled;
 	bool exportChaptersToFCPXMLEnabled;
