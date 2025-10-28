@@ -54,7 +54,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 # Extra Qt linkage on older Qt versions for *nix
 if((OS_LINUX OR OS_FREEBSD OR OS_OPENBSD) AND Qt_VERSION VERSION_LESS "6.9.0")
-  target_link_libraries(${PROJECT_NAME} PRIVATE Qt::GuiPrivate)
+  target_link_libraries(${PROJECT_NAME} PRIVATE Qt::Gui)
 endif()
 
 # Compiler / build flags
