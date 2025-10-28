@@ -1158,6 +1158,17 @@ void ChapterMarkerDock::onSceneChanged()
 
 extern bool (*obs_frontend_recording_add_chapter_wrapper)(const char *name);
 
+void ChapterMarkerDock::addChapterMarkerByCustomHotkey(const QString &chapterName, const QString &chapterSource) {
+	QString customChapterName = chapterName;
+
+	if (useIncrementalChapterNames) {
+		customChapterName = chapterName + " " + QString::number(chapterCount);
+		chapterCount++;
+	}
+
+	addChapterMarker(customChapterName, chapterSource);
+}
+
 void ChapterMarkerDock::addChapterMarker(const QString &chapterName, const QString &chapterSource)
 {
 	QString fullChapterName = chapterName;

@@ -41,7 +41,8 @@ public:
 	void showFeedbackMessage(const QString &message, bool isError);
 	void clearPreviousChaptersGroup();
 	void writeChapterToTextFile(const QString &chapterName, const QString &timestamp, const QString &chapterSource);
-	void addChapterMarker(const QString &chapterName, const QString &chapterSource);
+        void addChapterMarkerByCustomHotkey(const QString &chapterName, const QString &chapterSource);
+        void addChapterMarker(const QString &chapterName, const QString &chapterSource);
 	bool exportChaptersToTextEnabled;
 	bool exportChaptersToXMLEnabled;
 	bool exportChaptersToFileEnabled;

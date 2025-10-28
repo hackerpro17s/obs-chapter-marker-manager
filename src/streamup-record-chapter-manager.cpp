@@ -304,7 +304,7 @@ void AddChapterMarkerHotkey(void *data, obs_hotkey_id id, obs_hotkey_t *hotkey, 
 	}
 
 	if (!chapterName.isEmpty()) {
-		chapterMarkerDock->addChapterMarker(chapterName, obs_module_text("PresetHotkey"));
+		chapterMarkerDock->addChapterMarkerByCustomHotkey(chapterName, obs_module_text("PresetHotkey"));
 		blog(LOG_INFO, "[StreamUP Record Chapter Manager] Added chapter marker for: %s", QT_TO_UTF8(chapterName));
 	}
 }
