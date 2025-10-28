@@ -17,12 +17,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Andi Stone Media"
             VALUE "FileDescription", "StreamUP Record Chapter Manager"
-            VALUE "FileVersion", "1.1.1"
+            VALUE "FileVersion", "1.1.2"
             VALUE "InternalName", "streamup-record-chapter-manager"
             VALUE "LegalCopyright", "(C) Andi Stone Media"
             VALUE "OriginalFilename", "streamup-record-chapter-manager"
             VALUE "ProductName", "StreamUP Record Chapter Manager"
-            VALUE "ProductVersion", "1.1.1"
+            VALUE "ProductVersion", "1.1.2"
         END
     END
     BLOCK "VarFileInfo"
